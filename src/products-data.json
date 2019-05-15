@@ -4,7 +4,7 @@
     "name": "Fruit tea",
     "price": 3.11,
     "code": "FR1",
-    "rules": {
+    "offers": {
       "get_one_free": true
     }
   },
@@ -13,7 +13,7 @@
     "name": "Strawberries",
     "price": 5.00,
     "code": "SR1",
-    "rules": {
+    "offers": {
       "discount": {
         "price": 4.5,
         "min_quantity": 3
@@ -25,6 +25,6 @@
     "name": "Coffe",
     "price": 11.23,
     "code": "CF1",
-    "rules": {}
+    "offers": {}
   }
 ]

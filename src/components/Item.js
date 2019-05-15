@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addToBasket} from '../actions/ProductActions';
+import { addToBasket} from '../actions/products';
 import * as Styles from '../Styles.js';
 
 class Item extends Component {
