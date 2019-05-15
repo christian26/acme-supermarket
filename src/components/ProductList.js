@@ -4,22 +4,22 @@ import * as Styles from '../Styles.js';
 import Item from '../components/Item';
 
 class ProductList extends Component {
-	
+
 	render() {
-		
+
 		const lists = this.props.lists.map(product => {
-			
+
 			return (
-				<div key={product.id}>					
-					<Styles.Ul>	 											
-						<Item item={product}></Item>																					
-					</Styles.Ul>					
+				<div key={product.id}>
+					<Styles.Ul>
+						<Item item={product}></Item>
+					</Styles.Ul>
 				</div>
 			)
 		})
 		return (
 			<div>
-				{ lists }				
+				{ lists }
 			</div>
 		)
 	}
@@ -32,7 +32,7 @@ const mapStateToProps = (state) => {
 		title: state.title,
 		totalAmount: state.totalAmount,
 		selectedItems: state.selectedItems,
-    error: state.error    
+    msg: state.msg
 	}
 }
 

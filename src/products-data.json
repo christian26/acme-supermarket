@@ -3,18 +3,28 @@
     "id": 1,
     "name": "Fruit tea",
     "price": 3.11,
-    "code": "FR1"
+    "code": "FR1",
+    "rules": {
+      "get_one_free": true
+    }
   },
   {
     "id": 2,
     "name": "Strawberries",
     "price": 5.00,
-    "code": "SR1"
+    "code": "SR1",
+    "rules": {
+      "discount": {
+        "price": 4.5,
+        "min_quantity": 3
+      }
+    }
   },
   {
     "id": 3,
     "name": "Coffe",
     "price": 11.23,
-    "code": "CF1"
+    "code": "CF1",
+    "rules": {}
   }
-]  
+]

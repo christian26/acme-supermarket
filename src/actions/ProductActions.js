@@ -4,10 +4,3 @@ export const addToBasket = (item) => {
 	item: item,
   }
 }
-
-export const removeFromBasket = (item) => {
-  return {
-	type: 'REMOVE_FROM_BASKET',
-	item: item,
-  }
-}

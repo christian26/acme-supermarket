@@ -16,10 +16,10 @@ export const SubTitle = styled.h2`
     padding: 10px;
     text-align: center;
     text-transform: capitalize;
-	font-size: 16px;
+	  font-size: 14px;
 
-    ${props => props.error && css`
-        color: #da3743;
+    ${props => props.msg && css`
+        color: #009688;
     `}
 `
 
@@ -30,7 +30,7 @@ export const span = styled.span`
 export const Ul = styled.ul`
     padding: 0 10px;
     list-style: none;
-    margin: 0;    
+    margin: 0;
 `
 
 export const List = styled.li`

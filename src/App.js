@@ -6,15 +6,15 @@ import * as Styles from './Styles.js';
 
 class App extends Component {
     render() {
-    	
+
     	const selectedItems = this.props.selectedItems.length ?
 			this.props.selectedItems.map((item,idx) => {
-		
+
 				return (
-					<div key={idx}>						
-						<Styles.Ul>						
-						  <SelectedItem item={item}></SelectedItem>												
-						</Styles.Ul>				
+					<div key={idx}>
+						<Styles.Ul>
+						  <SelectedItem item={item}></SelectedItem>
+						</Styles.Ul>
 					</div>
 				)
 			})
@@ -40,12 +40,12 @@ class App extends Component {
 
 					<Styles.Card primary>
 						<Styles.SubTitle>Total Amount</Styles.SubTitle>
-						<Styles.totalAmount>£{this.props.totalAmount}</Styles.totalAmount>
-						<Styles.SubTitle>Products Selected</Styles.SubTitle>						
-                        
+						<Styles.totalAmount>£{Number(this.props.totalAmount).toFixed(2)}</Styles.totalAmount>
+						<Styles.SubTitle>Products Selected</Styles.SubTitle>
+
 						{selectedItems}
-                        
-						<Styles.SubTitle error>{this.props.error}</Styles.SubTitle>
+
+						<Styles.SubTitle msg>{this.props.msg}</Styles.SubTitle>
 					</Styles.Card>
 
 				</Styles.Main>
@@ -61,8 +61,7 @@ const mapStateToProps = (state) => {
 		title: state.title,
 		totalAmount: state.totalAmount,
 		selectedItems: state.selectedItems,
-        error: state.error,
-        diner: state.diner,
+    msg: state.msg,
 	}
 }
 
