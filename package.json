@@ -1,7 +1,7 @@
 {
-  "name": "ot-menu-test",
+  "name": "acme-supermarket",
   "version": "1.0.0",
-  "description": "A small scaffold application for building ot-menu",
+  "description": "ACME Supermarket application",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open"
@@ -10,7 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.1.1",
+    "redux": "^4.0.1",
+    "redux-devtools": "^3.4.2",
+    "styled-components": "^4.1.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",

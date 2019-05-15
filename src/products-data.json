@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Fruit tea",
+    "price": 3.11,
+    "code": "FR1"
+  },
+  {
+    "id": 2,
+    "name": "Strawberries",
+    "price": 5.00,
+    "code": "SR1"
+  },
+  {
+    "id": 3,
+    "name": "Coffe",
+    "price": 11.23,
+    "code": "CF1"
+  }
+]  
